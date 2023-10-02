@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 .App {
   text-align: center;
 }
@@ -35,4 +36,70 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald";
+}
+
+.pomodoro_body {
+  transition: all ease-in-out 0.3s;
+}
+
+.pomodoro__header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.pomodoro_body.black-mode {
+  background-color: 11eE1E;
+}
+
+.pomodoro__mode {
+  position: absolute;
+  right: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+}
+
+.pomodoro__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.pomodoro__time{
+  padding: 10px 15px;
+}
+
+.pomodoro__time{
+  font-size: 5rem;
+  transition: all ease-in-out .3s;
+}
+
+.pomodoro__settings{
+  background-color: #242424;
+  padding: 20px 40px;
+  border-radius: 9999px;
+}
+
+.pomodoro__btns{
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 5px;
 }
